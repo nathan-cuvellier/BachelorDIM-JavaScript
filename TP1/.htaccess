@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule auth auth.php
+RewriteRule admin admin.php

@@ -1,0 +1,20 @@
+
+
+nav li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav li a:link, nav li a:visited {
+    display:block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    transition: all 0.5s ease;
+}
+
+nav li a:hover {
+    padding-top: 15px;
+}
