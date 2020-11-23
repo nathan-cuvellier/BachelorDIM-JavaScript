@@ -16,7 +16,7 @@ Answers:
 	for errors (there will not be if you're enough talented) or data.
 
 Methods:
-	post & get, indifferently ("get" wins if conccurency)
+	post & get, indifferently ("get" wins if concurrency)
 
 Storage: 
 	all your data are stored in a fantastic database, 
@@ -32,15 +32,18 @@ Services list:
 header("Content-Type: application/json");
 
 $p = [];
+
 foreach($_POST as $k=>$v) $p[$k] = $v;
 foreach($_GET as $k=>$v) $p[$k] = $v;
+
+if($_SERVER['REQUEST_METHOD'] === 'POST')
+    foreach(json_decode(file_get_contents('php://input')) as $k=>$v) $p[$k] = $v;
 
 $filename = "data.json";
 if (!file_exists($filename))
 	file_put_contents($filename, '[]');
 
-$data = json_decode(file_get_contents("data.json"), false);
-
+$data = json_decode(file_get_contents("data.json"));
 
 if (isset($p["action"])) {
 
@@ -52,6 +55,7 @@ if (isset($p["action"])) {
 
 		//---------------------------------------------------------------------
 	    case "add":
+
 	    	$id = rand(0,0xFFFF); // Probably broken, but low probability
 	    	$o = new stdClass();
 	    	$o->id = $id;

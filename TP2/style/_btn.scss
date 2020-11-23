@@ -1,0 +1,19 @@
+div.btn-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    background-color: #06e773;
+    border-radius: 50%;
+    cursor: pointer;
+
+    button {
+        background-color: transparent;
+        border: none;
+        font-size: 4em;
+        color: #FFF;
+        outline:none;
+        pointer-events: none;
+    }
+}

@@ -28,11 +28,30 @@ table tbody tr {
 table tbody tr td .delete-beer {
   cursor: pointer;
 }
-table tbody tr:nth-of-type(even) {
+table tbody tr:nth-child(even) {
   background-color: #f3f3f3;
 }
 table .tbody tr:last-of-type {
   border-bottom: 2px solid #009879;
+}
+
+div.btn-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  background-color: #06e773;
+  border-radius: 50%;
+  cursor: pointer;
+}
+div.btn-add button {
+  background-color: transparent;
+  border: none;
+  font-size: 4em;
+  color: #FFF;
+  outline: none;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=app.css.map */
