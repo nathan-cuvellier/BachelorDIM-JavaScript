@@ -9,5 +9,8 @@
 *:confused: No demo (direct chat and paint (canvas))*
 
 # Demo session 4 :
+## 4.1 : async
+![tp4](https://raw.githubusercontent.com/nathan-cuvellier/BachelorDIM-Javascript/master/TP4/async/img/tp4.gif)
 
-![tp4](https://raw.githubusercontent.com/nathan-cuvellier/BachelorDIM-Javascript/master/TP4/img/tp4.gif)
+## 4.2 : canvas
+![tp4](https://raw.githubusercontent.com/nathan-cuvellier/BachelorDIM-Javascript/master/TP4/async/img/tp4.gif)
