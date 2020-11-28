@@ -13,4 +13,4 @@
 ![tp4](https://raw.githubusercontent.com/nathan-cuvellier/BachelorDIM-Javascript/master/TP4/async/img/tp4.gif)
 
 ## 4.2 : canvas
-![tp4](https://raw.githubusercontent.com/nathan-cuvellier/BachelorDIM-Javascript/master/TP4/async/img/tp4.gif)
+![tp4](https://raw.githubusercontent.com/nathan-cuvellier/BachelorDIM-Javascript/master/TP4/canvas/img/tp4.gif)
