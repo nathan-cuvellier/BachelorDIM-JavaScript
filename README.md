@@ -14,3 +14,13 @@
 
 ## 4.2 : canvas
 ![tp4](https://raw.githubusercontent.com/nathan-cuvellier/BachelorDIM-Javascript/master/TP4/canvas/img/tp4.gif)
+
+# Demo session 5 :
+
+***desktop version***
+
+![tp5 desktop](https://raw.githubusercontent.com/nathan-cuvellier/BachelorDIM-Javascript/master/TP5/img/screen-desktop.png)
+
+***mobile version***
+
+![tp5 mobile](https://raw.githubusercontent.com/nathan-cuvellier/BachelorDIM-Javascript/master/TP5/img/screen-mobile.png)
