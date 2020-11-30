@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Boring form</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Boring form</h1>
+</header>
+
+<form method="post" action="">
+    <div>
+        <label for="firstname">Firstname</label>
+        <input type="text" name="firstname" id="firstname"/>
+    </div>
+    <div>
+        <label for="lastname">lastname</label>
+        <input type="text" name="lastname" id="lastname"/>
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="range" min="18" max="120" name="age" id="age"/>
+    </div>
+    <div>
+        <label for="tea">tea</label>
+        <input type="radio" name="teaorcoffee" value="tea" id="tea"/>
+        <label for="tea">Coffee</label>
+        <input type="radio" name="teaorcoffee" value="coffee" id="coffee"/>
+    </div>
+    <div>
+        <label for="sum">1+1 = ?</label>
+        <select name="sum" id="sum">
+            <option value=""></option>
+            <option value="42">42</option>
+            <option value="2">2</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+        </select>
+    </div>
+    <div>
+        <label for="message">Message</label>
+        <textarea name="message" id="message"></textarea>
+    </div>
+    <div>
+        <label for="action"></label>
+        <input type="submit" name="action" id="action" value="So boring...">
+    </div>
+
+</form>
+
+<svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+    <path fill="#FF8C00" fill-opacity="1"
+          d="M0,64L40,64C80,64,160,64,240,85.3C320,107,400,149,480,154.7C560,160,640,128,720,106.7C800,85,880,75,960,74.7C1040,75,1120,85,1200,96C1280,107,1360,117,1400,122.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+</svg>
+
+<script src="main.js"></script>
+</body>
+</html>

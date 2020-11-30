@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f6f6f6;
+  background: linear-gradient(90deg, #f6f6f6 0%, #d5d8d9 100%);
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  background-color: #000000;
+  padding: 20px 0;
+}
+header h1 {
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+form {
+  position: relative;
+  display: flex;
+  z-index: 10;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  align-self: center;
+  margin: 30px auto 0 auto;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.75);
+  width: 350px;
+  background-color: #FFFFFF;
+}
+form > div {
+  margin: 10px 0;
+}
+form > div label {
+  display: block;
+  font-weight: bold;
+}
+form > div input, form > div textarea, form > div select {
+  outline-color: transparent;
+  border: none;
+  padding: 10px 5px;
+  background-color: #eeeeee;
+  width: 280px;
+}
+form > div .souitch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+form > div .ball {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  right: 16px;
+  width: 16px;
+  height: 16px;
+  background-color: #000000;
+  border-radius: 2px;
+  transition: all 0.5s ease;
+  transform: rotate(0deg);
+}
+form > div .ball.clicked {
+  left: 56px;
+  right: 4px;
+  transform: rotate(180deg);
+}
+form > div .souitchLabel {
+  display: inline-block;
+  vertical-align: middle;
+}
+form textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+#wave {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
