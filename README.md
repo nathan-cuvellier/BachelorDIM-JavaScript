@@ -24,3 +24,7 @@
 ***mobile version***
 
 ![tp5 mobile](https://raw.githubusercontent.com/nathan-cuvellier/BachelorDIM-Javascript/master/TP5/img/screen-mobile.png)
+
+# Demo session 6 :
+
+![tp6](https://raw.githubusercontent.com/nathan-cuvellier/BachelorDIM-Javascript/master/TP6/img/tp6.gif)
