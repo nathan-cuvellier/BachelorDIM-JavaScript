@@ -1,0 +1,18 @@
+.color span {
+    filter: invert(100%);
+}
+
+.note {
+    border: solid 1px black;
+    width: 100px;
+}
+
+.note span {
+    display: inline-block;
+    background-color: orange;
+}
+
+.beer {
+    width: 300px;
+    background-color: #06e773;
+}

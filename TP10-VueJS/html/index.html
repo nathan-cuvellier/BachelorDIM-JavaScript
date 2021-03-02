@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJs</title>
+    <link rel="stylesheet" href="/assets/css/app.css">
+</head>
+<body>
+<main id="app">
+    <header>
+        <h1>BeerMemory</h1>
+    </header>
+
+    <section>
+        <article>
+            <div v-for="beer of beers" class="beer">
+                <h2>{{ beer.name }}</h2>
+                <p
+                    class="color"
+                    v-bind:style="{ backgroundColor: beer.hex }">
+                    <span v-bind:style="{ color: beer.hex }">
+                        {{ beer.color }}
+                    </span>
+                </p>
+                <p class="country">{{ beer.country}}</p>
+                <p class="descr">{{ beer.descr}}</p>
+                <p class="degree">{{ beer.degree}}</p>
+                <p class="note">
+                    <span v-bind:style="{width: (100*beer.note/5)+'px'}">
+                        {{ beer.note }}
+                    </span>
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <p>
+                <label>Nom</label>
+                <input type="text" v-model="newBeer.name">
+            </p>
+            <p>
+                <label>Couleur</label>
+                <input type="text" v-model="newBeer.color">
+            </p>
+            <p>
+                <label>Hexa</label>
+                <input type="color" v-model="newBeer.hex" value="#cccccc">
+            </p>
+            <p>
+                <label>Pays</label>
+                <input type="text" v-model="newBeer.country">
+            </p>
+            <p>
+                <label>Note</label>
+                <input type="text" v-model="newBeer.note">
+            </p>
+            <p>
+                <label>Degree</label>
+                <input type="text" v-model="newBeer.degree">
+            </p>
+            <p>
+                <label>Description</label>
+                <input type="text" v-model="newBeer.descr">
+            </p>
+            <p>
+                <button @click="add">Ajouter</button>
+            </p>
+        </article>
+    </section>
+</main>
+<script src="assets/scripts/vue.js"></script>
+<script src="assets/scripts/vue-resource.js"></script>
+<script src="assets/scripts/index.js"></script>
+</body>
+</html>
